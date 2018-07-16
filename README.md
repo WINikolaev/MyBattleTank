@@ -5,21 +5,9 @@ This is the [Unreal Engine Developer]( http://gdev.tv/urcgithub) course – it s
 
 You're welcome to download, fork or do whatever else legal with all the files! The real value is in our huge, high-quality online tutorials that accompany this repo. You can check out the course here: [Unreal Engine Developer]( http://gdev.tv/urcgithub)
 
-## In This Section
+## test
 
-### 1 Intro, Notes & Section 4 Assets ###
+### test ###
 
-+ Battle Tank is an open world tank fight
-+ This will be a head to head battle
-+ Other player can be human or simple AI
-+ Heavy focus on control systems
-+ Also learning terrains, UI, terrain sculpting & more
-+ Dive right in and enjoy yourself!
++ teset
 
-### 1b Battle Tank Overview ###
-
-* An overview of the finished Battle Tank project.
-
-### 2 S04 Game Design Document (GDD) ###
-
-+ The Concept, Rules and (initial) requirements
