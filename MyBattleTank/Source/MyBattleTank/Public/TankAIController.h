@@ -2,22 +2,22 @@
 
 #pragma once
 
-
 #include "Tank.h"
 #include "CoreMinimal.h"
-#include "GameFramework/PlayerController.h"
-#include "TankPlayerController.generated.h"
+#include "AIController.h"
+#include "TankAIController.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class ATankPlayerController : public APlayerController
+class MYBATTLETANK_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
 	
-public:
-	ATank * GetControlledTank() const;
-	
+private:
 	void BeginPlay() override;
+	ATank * GetControlledTank() const;
+	ATank * GetPlayerTank() const;
+
 };
