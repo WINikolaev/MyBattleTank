@@ -5,11 +5,12 @@
 
 
 #include "TankBarrel.h"
-#include "TankAimingComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"
 
+class UTankBarrel;
+class UTankAimingComponent;
 
 UCLASS()
 class MYBATTLETANK_API ATank : public APawn
@@ -28,8 +29,7 @@ protected:
 private:	
 	// Sets default values for this pawn's properties
 	ATank();
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
