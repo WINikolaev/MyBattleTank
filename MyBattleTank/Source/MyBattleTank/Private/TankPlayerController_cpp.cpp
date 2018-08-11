@@ -35,10 +35,6 @@ ATank * ATankPlayerController_cpp::GetControlledTank() const
 void ATankPlayerController_cpp::AimTowardsCrosshair() 
 {
 	if (!GetControlledTank()) { return; }
-
-	auto Time = GetWorld()->GetTimeSeconds();
-	UE_LOG(LogTemp, Warning, TEXT("%f AimTowardsCrosshair called"), Time)
-
 	FVector HitLocation;
 	if(GetSightRayHitLocation(HitLocation))
 	{
