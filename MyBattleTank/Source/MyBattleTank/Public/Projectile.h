@@ -3,26 +3,29 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "GameFramework/Actor.h"
-#include "Rpojectile.generated.h"
+#include "Projectile.generated.h"
 
 UCLASS()
-class MYBATTLETANK_API ARpojectile : public AActor
+class MYBATTLETANK_API AProjectile : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ARpojectile();
-
+	AProjectile();
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+	///
+	void LaunchProjectile(float Speed);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+private:	
+	
+	UProjectileMovementComponent * ProjectileMovement = nullptr;
 	
 	
 };
