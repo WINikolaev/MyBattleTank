@@ -19,7 +19,8 @@ void ATankAIController::Tick(float DeltaTime)
 	auto ConttrolledTank = Cast<ATank>(GetPawn());
 	if (PlayerTank)
 	{
-		///
+		MoveToActor(PlayerTank, AcceptanceRadius); //TODO check readius is in cm
+
 		ConttrolledTank->AimAt(PlayerTank->GetActorLocation());
 		///
 		ConttrolledTank->Fire(); /// TODO limit firing rate
