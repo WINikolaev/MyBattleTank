@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright EmbraceIT Ltd.
 
 #pragma once
 
@@ -7,7 +7,6 @@
 #include "TankMovementComponent.generated.h"
 
 class UTankTrack;
-
 /**
  * Resposible from driving the tank tracks
  */

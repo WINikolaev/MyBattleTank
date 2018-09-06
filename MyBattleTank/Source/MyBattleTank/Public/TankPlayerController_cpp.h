@@ -16,9 +16,12 @@ UCLASS()
 class ATankPlayerController_cpp : public APlayerController
 {
 	GENERATED_BODY()
+protected:
+	UFUNCTION(BlueprintCallable, Category = "Setup")
+	ATank * GetControlledTank() const;
 
 public:
-	ATank * GetControlledTank() const;
+	
 
 	void BeginPlay() override;
 	// Called every frame
