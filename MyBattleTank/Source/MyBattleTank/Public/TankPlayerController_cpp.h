@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright EmbraceIT Ltd.
 
 #pragma once
 
@@ -10,7 +10,7 @@
 
 
 /**
-*
+*  REesponsible for helping the player
 */
 UCLASS()
 class ATankPlayerController_cpp : public APlayerController
@@ -19,6 +19,9 @@ class ATankPlayerController_cpp : public APlayerController
 protected:
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 	ATank * GetControlledTank() const;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
+	void FoundAimingComponent(UTankAimingComponent* AimCompRef);
 
 public:
 	

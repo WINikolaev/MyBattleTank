@@ -7,6 +7,7 @@
 #include "TankMovementComponent.generated.h"
 
 class UTankTrack;
+class UTankAimingComponent;
 /**
  * Resposible from driving the tank tracks
  */
