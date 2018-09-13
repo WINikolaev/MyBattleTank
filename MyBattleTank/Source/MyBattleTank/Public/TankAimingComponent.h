@@ -36,10 +36,7 @@ protected:
 	EFiringState FiringState = EFiringState::Locked;
 
 public:	
-	// Called every frame
-	/*virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;*/
-
-	void AimAt(FVector HitLocation, float LaunchSpeed);
+	void AimAt(FVector HitLocation);
 
 private:
 	// Sets default values for this component's properties
@@ -48,6 +45,8 @@ private:
 	UTankBarrel * Barrel = nullptr;
 	UTankTurret * Turret = nullptr;
 
+	UPROPERTY(EditDefaultsOnly, Category = Firing)
+	float LaunchSpeed = 4000;
 
 	void MoveBarrelTowards(FVector AimDirection);
 	
