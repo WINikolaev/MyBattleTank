@@ -22,10 +22,7 @@ void ATankAIController::Tick(float DeltaTime)
 	MoveToActor(PlayerTank, AcceptanceRadius); //TODO check readius is in cm
 	auto AimingComponent = ConttrolledTank->FindComponentByClass<UTankAimingComponent>();
 	AimingComponent->AimAt(PlayerTank->GetActorLocation());
-	
-	// TODO Fix firinig
-	//ConttrolledTank->Fire(); /// TODO limit firing rate
-	
+
 }
 
 
